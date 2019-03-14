@@ -1,58 +1,60 @@
-<!DOCTYPE html>
-<html lang="en-US">
-    <head>
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Roberto Castanon</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style_bio.css">
+</head>
+<body>
 
-        <meta type="description" content="Rob's Basic Contact Page">
-        <title>Basic Contact Page</title>
-        <link rel="stylesheet" href="assets/css/style_bio.css">
-    </head>
-    
+<div class="wrapper">
 
-    <body>
-            <header>
-                <div class="name_index">
-                        <h1>Roberto Castanon</h1>
-                </div>
-                
-                    <div class="bar">
-                        <a href="index.html">About</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-            </header>
-       <br> 
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Roberto Castanon</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div class="form">
-       <form action="/action_page.php">
+  <main class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-        <div class="contact">
-            <h2>Contact</h2>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
-            <hr>
-            
-        </div>
+    </section>
 
-        Name: <input type="text"
-        name="name" class="name" value="First Last"><br>
-        Email: <input type="text"
-        name="email" class="email" value="example@gmail.com"><br>
-        Message: <textarea name="message" id="message" class="message" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Submit" class="submit">
-    
-    </form>
+  </main>
+  <div class="push"></div>
 </div>
 
-
-       <br>
-    
-       <div class="content">
-           
-       </div>
-   
-       <footer class="footer">
-               <p>Copyright</p>
-       </footer>
-   
-       </body>
-   </html>
+  <footer>
+    <div class="container">
+      &copy; Copyright
+    </div>
+  </footer>
+</body>
+</html>
